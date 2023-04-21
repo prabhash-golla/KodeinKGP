@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT KHARAGPUR HOTELS</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        body{
+            scroll-behavior: smooth;
+        }
+        #Hidecss ul li a{
+            font-size: larger;
+            margin-right: 30px;
+            color: aliceblue;
+            background: black;
+        }
+        #home{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-image: linear-gradient(180deg,rgba(245,246,252,0.52),rgba(117,19,93,0.73)),url('https://thumbs.dreamstime.com/z/various-indian-food-buffet-collage-portrait-62770884.jpg');
+        }
+        @keyframes example{
+            0%   {background-color:rgba(255, 224, 145, 0.422);}
+            20%  {background-color:rgba(230, 255, 107, 0.422);}
+            40%  {background-color:rgba(122, 237, 255, 0.422); }
+            60%  {background-color:rgba(128, 108, 254, 0.422); }
+            80%  {background-color:rgba(245, 140, 251, 0.422); }
+            100% {background-color:rgba(254, 142, 142, 0.422); }
+        }
+        #home h1{
+            font-size: 4rem;
+        }
+        #home p{
+            font-size: 2rem;
+            width: 90%;
+            color: rgb(252, 252, 113);
+        }
+        #home h2{
+            width: 90%;
+            color: yellow;
+        }
+
+        #hotel{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .card{
+            background: linear-gradient(45deg,rgba(91, 176, 250, 0.737),rgba(245, 36, 36, 0.737));
+            border-radius: 1rem;
+            height: 19rem;
+            width: 20rem;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .card .city{
+            width: 20rem;
+        }
+        .card  .city img{
+            width: 20rem;
+            height: 13rem;
+        }
+        .card .text{
+            text-align: center;
+            padding: 10px;
+            height: 8rem;
+        }
+        .card .text h3{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: black;
+        }
+        .card .text p{
+            color: rgb(9, 4, 85);
+        }
+        .card a{
+            text-decoration: none;
+        }
+        .card:hover{
+            background: linear-gradient(225deg,rgba(91, 176, 250, 0.737),rgba(241, 77, 77, 0.737));
+        }
+        #trending{
+            background: rgba(249, 252, 167, 0.422);
+            animation-name: example;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        #trending h1{
+            font-size: 4rem;
+        }
+        #trending ul{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        #trending ul li{
+            font-size: 2rem;
+        }
+        #trending ul img{
+            height:30rem;
+            width:30rem;
+        }
+        @media only screen and (max-width: 650px){
+            #trending ul img{
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;justify-content: space-between;background-color: black;position: sticky;top: 0cm;height: 60px;align-items: center;background: black;">
+        <div>
+            <img src="https://www.logolynx.com/images/logolynx/0a/0ade42c723d39d5765f3934a62a12b70.jpeg" style="height: 60px;">
+        </div>
+        <div id="Hidecss">
+            <ul style="display: flex;list-style: none;margin-right: 20px;">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#hotels">HOTELS</a></li>
+                <li><a href="#trending">TRENDING</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="home">
+        <br><br><br><br><br><br><br><br>
+        <h1>Welcome to the food world off IIT KHARAGPUR</h1>
+        <br><br><br><br>
+        <p>Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, repair, and maintenance of body tissues and for the regulation of vital processes.</p>
+        <br><br><br><br>
+        <h2>Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our bodies need to function.
+        The energy in food is measured in units called calories. Age, sex, weight, height, and level of activity determine the number of calories a person needs each day. Depending on age, sex, and activity level, the recommended daily caloric intake for a child
+        aged 11 to 14 can range anywhere from 1,600 to 2,600 calories per day, with sedentary girls needing the fewest calories and active boys needing the most.For adults, this can range from 1,800 to about 3,000.</h2>
+    <br><br><br><br></div>
+    <hr>
+    <div id="hotels">
+        <br><br><br><br>
+        <center><h1 style="font-size: 6rem;margin-bottom: 20px;">HOTELS</h1></center><div id="hotel">
+            <div class="card"><a href="heritage.html">
+                <div class="city">
+                    <img src="https://tsgblog.iitkgp.ac.in/content/images/size/w2000/2022/03/baskinrobbins-3.jpg">
+                </div>
+                <div class="text">
+                    <h3>HERITAGE</h3>
+                    <p>It is a famous place near Mioamore.</p>
+                </div></a>
+            </div>
+        <div class="card"><a href="#">
+            <div class="city">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6xMIw_o0YQZmG_nAFRGbzX8ZS6kvMt6885rab3Rt94Q&s">
+            </div>
+            <div class="text">
+                <h3>TIKKA</h3>
+                <p>It is a famous place near clock tower.</p>
+            </div></a>
+        </div>
+      <div class="card"><a href="#">
+            <div class="city">
+                <img src="https://b.zmtcdn.com/data/pictures/7/20465517/97dedbeaab61a4f51e7059fd326852c9.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*">
+            </div>
+            <div class="text">
+                <h3>VEGIES</h3>
+                <p>It is a famous place near Gyan Ghosh Stadium.</p>
+            </div></a>
+        </div><div class="card"><a href="#">
+            <div class="city">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNfCoanviOPBHwVDKKVYVlipfcAdLm9rIuuh8c=s1360-w1360-h1020">
+            </div>
+            <div class="text">
+                <h3>SAHARA</h3>
+                <p>It is a famous place near clock tower.</p>
+            </div></a>
+        </div><div class="card"><a href="#">
+            <div class="city">
+                <img src="https://scontent-bom1-2.xx.fbcdn.net/v/t39.30808-6/323397452_574361171355295_5157946129545050534_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=w1GMSmBVXn8AX9NRzrI&_nc_ht=scontent-bom1-2.xx&oh=00_AfCTunbB6mZyHqjAj14qiIUKobs_55_vezAEN6X5-UcfWw&oe=64431D84">
+            </div>
+            <div class="text">
+                <h3>PFC</h3>
+                <p>It is a famous place in PAN loop.</p>
+            </div></a>
+        </div><div class="card"><a href="#">
+            <div class="city">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipM2UaAiv5H79OUNn95I7FpJNTz3Aux3pw2qfryw=s1360-w1360-h1020">
+            </div>
+            <div class="text">
+                <h3>MOMOMIA</h3>
+                <p>It is a famous place near Gyan Ghosh Stadium.</p>
+            </div></div></a>
+        </div>
+    </div>
+    <div id="trending">
+        <br><br><br><br>
+        <center><h1>Top trending items are</h1></center>
+        <br><br>
+        <ul style="list-style: none;">
+            <div><li>1)Schezwan masala dosa,Tikka</li>
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/04/schezwan-dosa.jpg"><br><br></div>
+            <div><li>2)Panner Sandwich,PFC</li>
+            <img src="https://www.manjulaskitchen.com/wp-content/uploads/paneer_sandwich.jpg"><br><br></div>
+            <div><li>3)Crispy Babycorn,Heritage</li>
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/03/chilli-baby-corn-1.jpg"><br><br></div>
+            <div><li>4)Manchurian Momos,Momomia</li>
+            <img src="https://www.indianfoodrecipesonline.com/wp-content/uploads/2021/10/Momo-Manchurian-Recipe-in-Hindi-800x840.jpg"><br><br></div>
+            <div><li>5)Hyderabadi Biryani,Sahara</li>
+            <img src="https://www.masalabox.com/wp-content/uploads/2022/10/GoatBiryani-scaled-1-2048x1498.webp"><br><br></div>
+        </ul>
+    </div>
+</body>
+</html>

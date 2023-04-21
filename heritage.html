@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+        #Hidecss ul li a {
+            font-size: larger;
+            margin-right: 30px;
+            color: aliceblue;
+            background: black;
+        }
+        #cart{
+            position: relative;
+            background: white;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        #quantity{
+            font-size: 14px;
+            background-color:brown;
+            color: aliceblue;
+            position: absolute;
+            top: -10px;
+            right:-5px;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        .item{
+            display: grid;
+            grid-template-columns: repeat(4,225px);
+            margin-top: 30px;
+            gap: 30px;
+            justify-content: center;
+        }
+        @media (max-width:1060px){
+            #Hidecss ul li a{
+                font-size: 20px;
+            }
+            .item{
+               grid-template-columns: repeat(2,225px);
+            }
+        }
+        @media (max-width:550px){
+            #Hidecss{
+                align-items: center;
+            }
+            #Hidecss ul li a{
+                font-size: 15px;
+            }
+            .item{
+               grid-template-columns: repeat(1,225px);
+            }
+        }
+        .it{
+            border: 2px solid black;
+            border-radius: 5px;
+        } 
+        .it img{
+            width:222px;
+            height: 250px;
+        } 
+        #cost{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } 
+        #symbols{
+            display: flex;
+            gap:6px;
+        }
+        .bi-dash{
+            color: red;
+        }
+        .bi-plus{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="display: flex;justify-content: space-between;background-color: black;position: sticky;top: 0cm;height: 60px;align-items: center;background: black;">
+        <div>
+            <img src="https://content3.jdmagicbox.com/comp/kharagpur/c7/9999p3222.3222.170606140800.h7c7/catalogue/heritage-restaurant-kharagpur-7e9ik.jpg"
+                style="height: 60px;">
+        </div>
+        <div id="Hidecss">
+            <ul style="display: flex;list-style: none;margin-right: 20px;">
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#hotels">HOTELS</a></li>
+                <li><a href="index.html#trending">TRENDING</a></li>
+                <div id="cart"><li><i class="bi bi-cart3"></i><div id="quantity">0</div></li></div>
+            </ul>
+        </div>
+    </div>
+    <div id="info">
+        <h1>Heritage</h1>
+        <div class="item" id="item">
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
