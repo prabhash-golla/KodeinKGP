@@ -37,7 +37,7 @@ let generateItem = () => {
                 <h3>${cost}</h3>
                 <div id="symbols">
                     <i onclick="decrement(${id})" class="bi bi-dash"></i>
-                    <div id=${x.id} class="num">
+                    <div id=${id} class="num">
                     ${search.item===undefined ? 0 : search.item}
                     </div>
                     <i onclick="increment(${id})" class="bi bi-plus"></i>
@@ -59,19 +59,21 @@ let increment = (id) =>{
     }
     else{
         search.item +=1;
-    }
-    localStorage.setItem("data",JSON.stringify(basket));
+    }    
     update(selecteditem.id);
+    localStorage.setItem("data",JSON.stringify(basket));
 };
 let decrement = (id) =>{
     let selecteditem =id;
     let search =basket.find((x)=> x.id === selecteditem.id);
-    if(search.item===0) return;
+    if(search === undefined) return;
+    else if(search.item===0) return;
     else{
         search.item -=1;
     }
-    localStorage.setItem("data",JSON.stringify(basket));
     update(selecteditem.id);
+    basket=basket.filter((x)=>x.item!==0);  
+    localStorage.setItem("data",JSON.stringify(basket));
 };
 let update = (id) =>{
     let search = basket.find((x) => x.id === id);
